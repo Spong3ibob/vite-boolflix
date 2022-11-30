@@ -10,11 +10,13 @@ export default {
   },
   methods: {
     invio(){
-      console.log(film)
+      console.log(this.store.film)
     }
   },
   data(){
-    return {}
+    return {
+      store,
+    }
   }
   
 }
