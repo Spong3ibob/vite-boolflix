@@ -12,7 +12,6 @@ export default {
     <h3>{{ info.title }}</h3>
     <h4>{{ info.original_language }}</h4>
     <h4>{{ info.vote_average }}</h4>
-    <img :src='"info.backdrop_path"' alt="">
 
 </template>
 <style>

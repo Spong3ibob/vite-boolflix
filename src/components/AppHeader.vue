@@ -16,7 +16,7 @@ export default {
         <input
         type="text" 
         placeholder="Inizia la ricerca..."
-        v-model="store.filmSerch">
+        v-model="store.filmSearch">
         <button type="submit">Cerca</button>
     </form>
 

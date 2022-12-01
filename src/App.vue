@@ -9,12 +9,17 @@ export default {
     AppHeader,
     AppMain
   },
+  data(){
+    return {
+      store,
+    }
+  },
   methods: {
     getData(){
       axios.get("https://api.themoviedb.org/3/search/movie?",{
         params:{
           api_key:'eea6eb22c600ece669bce7dbab045759',
-          query: this.store.filmSerch,
+          query: this.store.filmSearch,
           language: 'it-IT',
         }
       })
@@ -25,28 +30,21 @@ export default {
       .catch((err) => {
         console.log(err)
       })
-    },
-    getData(){
     axios.get("https://api.themoviedb.org/3/search/tv?",{
       params:{
         api_key:'eea6eb22c600ece669bce7dbab045759',
-        query: this.store.filmSerch,
+        query: this.store.filmSearch,
         language: 'it-IT',
       }
     })
-    .then((result) => {
-      this.store.tv=result.data.results;
-      console.log(result.data.results);
+    .then((risultato) => {
+      this.store.series=risultato.data.results;
+      console.log(risultato.data.results);
     })
     .catch((err) => {
         console.log(err)
     })
   },
-  data(){
-    return {
-      store,
-    }
-  }
   
   }
 }
