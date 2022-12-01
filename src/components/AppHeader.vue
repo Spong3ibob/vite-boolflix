@@ -11,11 +11,14 @@ export default {
 </script>
 
 <template>
-<h1>BOOLFLIX</h1>
-
-    <input type="text" v-model="store.film">
-    <button @click="$emit('ricerca')">Cerca</button>
-
+    <h1>BOOLFLIX</h1>
+    <form @submit.prevent="$emit('performSerch')">
+        <input
+        type="text" 
+        placeholder="Inizia la ricerca..."
+        v-model="store.filmSerch">
+        <button type="submit">Cerca</button>
+    </form>
 
 </template>
 
