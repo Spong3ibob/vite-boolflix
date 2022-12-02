@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "axios": "^1.2.0",
     "sass": "^1.56.1",
     "scss": "^0.2.4",
