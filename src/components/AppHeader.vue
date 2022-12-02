@@ -18,7 +18,7 @@ export default {
         type="text" 
         placeholder="Inizia la ricerca..."
         v-model="store.filmSearch">
-        <button type="submit">4<font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
+        <button type="submit"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
     </form>
 </div>
 </template>

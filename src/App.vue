@@ -7,11 +7,12 @@ import axios from 'axios'
 export default {
   components: {
     AppHeader,
-    AppMain
+    AppMain,
   },
   data(){
     return {
       store,
+  
     }
   },
   methods: {
