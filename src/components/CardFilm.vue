@@ -8,18 +8,30 @@ export default {
 </script>
 <template>
     <div class="card-film">
-        <img :src='`http://image.tmdb.org/t/p/w300/${info.poster_path}`' alt="">
-        <h2 class="film">{{ info.original_title }}</h2>
-        <h3 class="film">{{ info.title }}</h3>
-        <h4 class="film">{{ info.original_language }}</h4>
-        <h4 class="film">{{ info.vote_average }}</h4>
+        <img :src='`http://image.tmdb.org/t/p/w185/${info.poster_path}`' alt="">
+        <div class="description">
+        <h2>{{ info.original_title }}</h2>
+        <h4>{{ info.original_language }}</h4>
+        <h4>★{{ info.vote_average }}</h4>
+        </div>
     </div>  
 </template>
-<style>
+<style lang="scss">
 .card-film{
-background-color: black;
+    position: relative;
 }
-.film{
+.description{
+    display: block;
     color: white;
+    background-color: rgba($color: #808080, $alpha: 0.8);
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+}
+.description:hover{
+    display: none;
+   
 }
 </style>

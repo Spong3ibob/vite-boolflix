@@ -18,7 +18,7 @@ export default {
         type="text" 
         placeholder="Inizia la ricerca..."
         v-model="store.filmSearch">
-        <button type="submit"><font-awesome-icon icon="fa-solid fa-magnifying-glass" /></button>
+        <button type="submit">🔍</button>
     </form>
 </div>
 </template>
@@ -35,6 +35,7 @@ h1{
 }
 button{
     border: none;
+    background-color: transparent;
 
 }
 </style>

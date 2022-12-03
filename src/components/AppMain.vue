@@ -35,12 +35,18 @@ export default {
     </div>
 </template>
 
-<style>
+<style scoped>
 .container-film{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
 }
 .container-serie{
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: black;
 }
 h2{
     color: white;
